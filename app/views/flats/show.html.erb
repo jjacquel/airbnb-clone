@@ -1,0 +1,23 @@
+<div class="jumbotron" style="background-image: url(<%= @flat['imageUrl'] %>); background-position: center; background-size: cover;">
+  <div class="container py-5">
+    <% 10.times do  %>
+      <br>
+    <% end %>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-7">
+      <h1><%= @flat['name'] %></h1>
+      <p><%= @flat['price'] %> <%= @flat['priceCurrency'] %></p>
+      <%= link_to "See All Flats", root_path, class:"btn btn-primary" %>
+    </div>
+    <div class="col-md-5">
+<!--     <div class="col-md-5 px-0"> -->
+      <img src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/<%= @flat['lng'] %>,<%= @flat['lat'] %>,10.45,0,0/600x600?access_token=pk.eyJ1IjoiamphY3F1ZWwiLCJhIjoiY2tvM3A1ZzFjMTR0bDJxbnNoeHBxNHRmcCJ9.twfdjTCtMak6MAZq-xB4TA" class="w-100">
+    </div>
+  </div>
+</div>
+
+
